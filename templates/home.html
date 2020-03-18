@@ -36,6 +36,7 @@ div {
 </style>
 
 
+
 <body>
 <center><h1><font color="white">Insurance Prediction</h1></center>
 <h2>     </h2>
@@ -44,22 +45,34 @@ div {
     margin-left: 30%;">
 
   <form method="POST">
-  <form action="/action_page.php">
-    <label for="price"></label>
-    <input type="number" id="price" name="price" placeholder="Price (between 38 and 1027)" min="38" max="1027" step="0.1" required size="35">
-
-    <label for="Tax"></label>
-    <input type="number" id="Tax" name="Tax" placeholder="Tax (between 2 or 103)" min="2" max="103" step="0.1" required size="35">
-
-    <label for="Driver_Age"></label>
-    <input type="number" id="Driver_Age" name="Driver_Age" placeholder="Driver Age (between 18 and 74)" min="18" max="74" required>
-
-    <label for="Licence_Length_Years"></label>
-    <input type="number" id="Licence_Length_Years" name="Licence_Length_Years" placeholder="Licence Length in Years (between 0 and 16.5)" min="-0.3" max="16.5" step="0.1" required>
-
+  <form action="/action_page.php">>
+    <label for="age"></label>
+    <input type="number" id="age" name="age">
+    <label for="sex"></label>
+    <input type="number" id="sex" name="sex">
+    <label for="cp"></label>
+    <input type="number" id="cp" name="cp">
+    <label for="trestbps"></label>
+    <input type="number" id="trestbps" name="trestbps">
+    <label for="chol"></label>
+    <input type="number" id="chol" name="chol">
+    <label for="fbs"></label>
+    <input type="number" id="fbs" name="fbs">
+    <label for="restecg"></label>
+    <input type="number" id="restecg" name="restecg">
+    <label for="thalach"></label>
+    <input type="number" id="thalach" name="thalach">
+    <label for="exang"></label>
+    <input type="number" id="exang" name="exang">
+    <label for="oldpeak"></label>
+    <input type="number" id="oldpeak" name="oldpeak">
+    <label for="slope"></label>
+    <input type="number" id="slope" name="slope">
+    <label for="ca"></label>
+    <input type="number" id="ca" name="ca">
+    <label for="thal"></label>
+    <input type="number" id="thal" name="thal">
     <select name="req_model">
-    <option value="Logistic">Logistic Regression</option>
-    <option value="RandomForest">Random Forest</option>
     <option value="SVM">SVM</option>
   </select>
 
