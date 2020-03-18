@@ -16,7 +16,7 @@ def get_predictions(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,s
     mylist = [float(i) for i in mylist]
     vals = [mylist]
 
-    elif req_model == 'SVM':
+    if req_model == 'SVM':
         #print(req_model)
         return svm_model.predict(vals)[0]
     else:
