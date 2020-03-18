@@ -44,6 +44,7 @@ def my_form_post():
     slope = request.form['slope']
     ca = request.form['ca']
     thal = request.form['thal']
+    req_model = request.form['req_model']
 
 
     target = get_predictions(age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca, thal, req_model)
