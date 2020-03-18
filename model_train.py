@@ -11,5 +11,5 @@ y = data['target'].values
 clf = svm.SVC()
 clf.fit(X,y)
 
-pickle.dump(clf, open('svm_heart,pkl', 'wb'))
+pickle.dump(clf, open('Models/svm_heart.pkl', 'wb'))
 
